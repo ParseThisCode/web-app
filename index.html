@@ -1,21 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
- <head>
-  <meta name="viewport" content="width=device-width" />
-  <meta name="author" content="" />
-  <meta name="description" content="" />
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="assets/favicon.svg" />
-  <link rel="stylesheet" href="style.css" media="all" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="main.js" defer></script>
-  <title>web-app</title>
- </head>
- <body class="grid place-items-center h-full">
-  <h1 class="">
-   This is an default
-   <span class="font-mono">index.html</span>
-   content
-  </h1>
- </body>
+<html lang="en" class="scroll-smooth h-full">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" media="all" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
+    <title>web-app</title>
+  </head>
+  <body class="grid h-full">
+    <header>
+      <nav
+        class="flex justify-between items-center py-2 px-4 text-white bg-indigo"
+      >
+        <span class="select-none">Connected with: @dmin at prv_sec_ch_01</span>
+        <span class="cursor-pointer material-icons">settings</span>
+      </nav>
+    </header>
+    <main></main>
+    <footer class="h-min w-full place-self-end flex justify-between items-center gap-4 py-2 px-4">
+      <section class="relative w-full">
+        <input
+          class="
+            outline-none
+            border-2 border-slate-500
+            focus:border-indigo
+            transition
+            duration-300
+            ease-in
+            p-2
+            pr-12
+            rounded-md
+            peer
+            w-full
+          "
+        />
+        <label
+          class="
+            absolute
+            -top-2
+            left-3
+            bg-white
+            px-2
+            text-xs
+            peer-focus:text-indigo
+            transition-all
+            duration-300
+            ease-in
+          "
+          >message</label
+        >
+        <button class="material-icons text-indigo absolute right-2 bottom-1/4 ">send</button>
+      </section>
+    </footer>
+  </body>
 </html>
